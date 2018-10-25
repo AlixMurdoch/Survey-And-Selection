@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -S /bin/bash
+#PBS -N my-MPI-job
+#PBS -A UQ-EAIT-MechMining
+#PBS -l select=1:ncpus=4:mpiprocs=4:mem=5g 
+#PBS -l walltime=10:00:00
+
+module purge
+module load gnu
+module load openmpi_ib/1.8.4
+
+cd $PBS_O_WORKDIR
+lua run-calculation-in-stages.lua

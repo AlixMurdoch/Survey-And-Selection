@@ -1,0 +1,19 @@
+Oct 2018 -- Alix Murdoch
+
+Produces the thermodynamic properties of air species for use in hypersonic flow simulations
+
+monatoms and diatoms contain files to produce these properties across a temperature range
+The work of Mario Capitelli (1970-2014) largely underpins this analysis
+
+these properties can then be fit using polynomials for direct integration into Eilmer4
+
+the eilmer4 documentation and repository can be found at the following URL.
+http://cfcfd.mechmining.uq.edu.au/eilmer/
+
+the Eilmer4 scripts used to validate these models appear in the Eilmer4 folder
+this has been prepared for use in running jobs on the university of queensland tinaroo hpc cluster,
+however it may be run on any machine with an installation of Eilmer4
+
+
+some supplementary data drawn from the tables of Capitelli 2005 is provided to save someone
+else from having to repeat this process. They appear for a dE of 250cm^-1.
